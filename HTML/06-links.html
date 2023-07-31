@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+
+<body>
+    <!-- 
+        _self: 当前页面打开, 默认
+        _blank: 新tab标签页打开, 用户可以设置浏览器打开新的窗口
+        _parent: 该元素在当前浏览器的父节点中打开, 如果没有父节点, 则与_self保持一致
+        _top: 在最高祖先节点元素中打开, 如果没有, 则与_self一致
+     -->
+
+    <!-- default -->
+    <a href="https://www.mozilla.org/en-US/about/manifesto/">
+        Mozilla Manifesto
+    </a>
+
+    <br>
+
+    <a href="https://www.mozilla.org/en-US/about/manifesto/" target="_self">
+        Open in current tab
+    </a>
+
+    <br>
+
+    <!-- open in a new tab -->
+    <a href="https://www.mozilla.org/en-US/about/manifesto/" target="_blank">
+        Open in a new tab
+    </a>
+
+    <br>
+
+    <a href="https://www.mozilla.org/en-US/about/manifesto/" target="_blank" rel="noopenner">
+        Mozilla Manifesto
+    </a>
+
+    <!-- parent and top are in few use. since we're not use iframe anymore in H5, so just ignore -->
+    <a href="https://www.mozilla.org/en-US/about/manifesto/" target="_parent">
+        Mozilla Manifesto
+    </a>
+
+</body>
+
+</html>

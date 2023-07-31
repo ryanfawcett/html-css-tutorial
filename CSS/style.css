@@ -1,0 +1,17 @@
+p {
+    width: 500px;
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* Selecting multiple elements */
+p1,
+h1,
+li {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+}

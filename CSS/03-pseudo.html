@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        /* 未访问过的 */
+        a:link {
+            color: aquamarine;
+        }
+
+        /* 用于查找访问过的连接 */
+        /* 它是根本用户的历史记录进行判断的, 由于隐私原因, 只能改变文字的颜色 */
+        a:visited {
+            color: orange;
+        }
+
+        /* 其中, :link 和 :visited 是a标签特有的伪类 */
+
+        a:active {
+            color: #000;
+        }
+
+        a:hover {
+            color: burlywood;
+        }
+
+        h1:active {
+            color: red;
+        }
+
+        /* 结构伪类 */
+        /* :root 一般用于html, html:root = :root */
+        /* :empty 用于元素节点的内容为空 */
+        .foo, .baz {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        div:empty {
+            background-color: orange;
+        }
+
+        /* :first-child 第一个子元素 */
+        li:first-child {
+            color: rgb(31, 224, 160);
+        }
+        /* :first-of-type 同类型元素的第一个元素 */
+        /* :last-child 最后一个子元素 */
+        /* :last-of-type 同类型元素的最后一个元素 */
+        li:last-child {
+            color: rgb(93, 166, 229);
+        }
+
+        /* :nth-child(n) 第n个元素, n 可以为具体的数字, 也可以是 n + 1/2n... */
+        /* :nth-of-type(n) */
+        li:nth-child(2) {
+            color: rgb(223, 223, 79);
+        }
+
+        li:nth-of-type(1) {
+            font-size: 18px;
+        }
+
+        /* 否定伪类 */
+        li:not(:nth-child(2)) {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        /* 推荐的写法, 代码可读性优于:nth-child() */
+        li:not(.bar) {
+            font-size: 20px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- 表示为body的第一个li元素 -->
+    <li>Pseudo</li>
+    <!-- 伪类: 用于表示元素特殊状态 -->
+    <a href="https://www.mozilla.org/en-US/about/manifesto/">访问过的</a>
+    <a href="https://www.mozilla.org/en-US/about/manifesto/">未访问的</a>
+
+    <h1>Foo</h1>
+
+    <!-- 结构伪类 -->
+    <div class="foo">Foo</div>
+    <div class="baz"></div>
+
+    <!-- :first-child -->
+    <ul>
+        <li>Foo</li>
+        <li class="bar">Baz</li>
+        <li>Greeting</li>
+    </ul>
+</body>
+</html>

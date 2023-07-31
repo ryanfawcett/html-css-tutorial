@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        /* 伪元素 */
+        /* 可以通过CSS在开始标签后/结束标签前添加内容, 并且该内容无法被选中/无法被爬虫爬取 */
+        div::before {
+            content: 'before';
+        }
+
+        div::after {
+            content: 'after';
+        }
+
+        section::before {
+            content: '> ';
+        }
+
+        /* ::first-letter: 首字母 */
+        /* ::first-line: 第一行 */
+        /* ::selection: 选中 */
+    </style>
+</head>
+<body>
+    <div>伪元素</div>
+
+    <br>
+
+    <section>Foo</section>
+    <section>Baz</section>
+    <section>Greeting</section>
+</body>
+</html>
