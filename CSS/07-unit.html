@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit</title>
+    <style>
+        /* 长度单位 */
+        /* 在不同分辨率设备中, 最终展现的长度不一样 */
+        /* 比如在1920 * 1080分辨率下设置的100px, 比2k分辨率中的长度要长 */
+        .foo {
+            width: 100px;
+            height: 100px;
+            background-color: darkgoldenrod;
+        }
+
+        /* 百分比 */
+        /* 父元素制定属性的百分比 */
+        .baz {
+            width: 50%;
+            height: 50%;
+            background-color: orange;
+        }
+
+        /* em */
+        /* 1em = 1 font-size(当前元素) */
+        .greeting {
+            font-size: 100px;
+            width: 2em;
+            height: 2em;
+            background-color: rgb(233, 162, 76);
+        }
+
+        /* rem */
+        /* 1rem = 1 root font-size(html) */
+        html {
+            font-size: 100px;
+        }
+        
+        .rem {
+            width: 1rem;
+            height: 1rem;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 长度单位 -->
+    <div class="foo">
+        <!-- 百分比 -->
+        <div class="baz"></div>
+    </div>
+
+    <!-- em -->
+    <div class="greeting"></div>
+
+    <!-- rem -->
+    <div class="rem"></div>
+</body>
+</html>
