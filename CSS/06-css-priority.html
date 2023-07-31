@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Priority</title>
+    <style>
+        p {
+            color: olivedrab;
+        }
+        /*
+            通配选择器: 0, 0, 0, 0
+            元素选择器: 0, 0, 0, 1
+            类/伪类选择器: 0, 0, 1, 0
+            id选择器: 0, 1, 0, 0
+            内联样式: 1, 0, 0, 0
+
+            设置最高优先级: !important 慎用
+         */
+
+         /* 比较优先级时, 需要将多个选择器的优先级一起计算 */
+         /* 尽量不要使用内联样式 */
+    </style>
+</head>
+<body>
+    <!-- 样式的权重/优先级 -->
+    <div class="foo" id="foo" style="color: orange;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fuga quasi aperiam, repudiandae, unde, consequatur doloremque nostrum reprehenderit recusandae beatae molestiae. Sit omnis minus ullam error laudantium? Corporis, eaque necessitatibus.
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quos ad quam optio nemo doloremque ullam mollitia voluptas nihil itaque. Perferendis modi, fugit deserunt architecto ullam rerum quasi eos excepturi.</p>
+    </div>
+</body>
+</html>
