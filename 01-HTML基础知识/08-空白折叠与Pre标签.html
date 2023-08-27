@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>空白折叠与Pre标签</title>
+</head>
+
+<body>
+	<!-- 什么是空白折叠 -->
+	<!-- 连续出现的空白字符/换行, 在显示的时候会被折叠成一个空格 -->
+
+	<!-- 好处：可以将源代码和页面上显示的内容区分开 -->
+	<p>Lorem 
+
+					ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit cumque odit, 
+		at enim dolore officia aperiam eius veniam non. 
+		Ea quas veritatis nemo accusantium inventore numquam autem asperiores dolor porro.
+	</p>
+
+	<!-- pre 预格式化文本标签 -->
+	<!-- 预格式化文本标签中的内容不会出现空白折叠 -->
+	<pre>
+		离离原上草，
+		一岁一枯荣。
+		野火烧不尽，
+		春风吹又生。
+	</pre>
+
+	<!-- 预格式化文本标签本质：css属性 -->
+	<!-- white-space: pre -->
+</body>
+
+</html>
