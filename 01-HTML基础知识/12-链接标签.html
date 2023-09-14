@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>链接标签</title>
+</head>
+
+<body>
+	<!-- 链接标签的基本语法 -->
+	<a href="#">链接文本</a>
+
+	<!-- 链接标签的详细使用 -->
+	<!-- 
+		链接标签具有的属性:
+			1. href: 用于指定链接目标的URL
+			2. target(可选): 指定链接如何在浏览器中打开, 
+				- _blank: 在新标签或窗口中打开链接
+				- _self: 在当前标签或窗口中打开链接
+			3. title(可选): 鼠标悬停时显示的文字
+			4. rel(可选): 指定与链接目标的关系
+	 -->
+
+	 <!-- 文本链接 -->
+	 <a href="https://www.baidu.com">百度一下</a>
+
+	 <!-- 图像链接 -->
+	 <!-- 实现: 使用链接标签将图像标签包裹 -->
+	 <a href="https://www.baidu.com">
+	 	<img src="../images/weather.jpeg" alt="出错了">
+	 </a>
+
+	 <!-- 锚点链接 -->
+	 <a href="#part2">Part2</a>
+	 <div style="width: 500px; height: 500px; background: orange;"></div>
+	 <p id="part2"></p>
+
+	 <!-- 下载链接 -->
+	 <a href="../images/weather.jpeg" download>下载图片</a>
+</body>
+
+</html>
