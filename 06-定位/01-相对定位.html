@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>相对定位</title>
+  <style>
+    .foo {
+      position: relative;
+      top: 100px;
+      left: 50px;
+      width: 200px;
+      height: 200px;
+      background-color: #733d3d;
+    }
+
+    .barz {
+      width: 200px;
+      height: 200px;
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 定位 = 定位模式 + 边偏移 -->
+  <!-- 相对定位：相对于自己原来的位置来移动的 -->
+  <!-- 原来在标准流的位置继续占有，后面的盒子仍然以标准流的方式对待它，即不脱离文档流 -->
+  <div class="foo"></div>
+  <div class="barz"></div>
+</body>
+
+</html>
