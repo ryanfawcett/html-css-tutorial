@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>绝对定位</title>
+  <style>
+    .foo {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 100px;
+      left: 50px;
+      background-color: rgba(97, 208, 81, 0.836)
+    }
+
+    .father {
+      width: 400px;
+      height: 400px;
+      background-color: antiquewhite;
+    }
+
+    .son {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 0;
+      left: 0;
+      background-color: #b61414;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 没有祖先元素/祖先元素没有设置定位 -->
+  <div class="foo"></div>
+
+  <div class="father">
+    <div class="son"></div>
+  </div>
+</body>
+
+</html>

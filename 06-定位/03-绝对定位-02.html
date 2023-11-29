@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>绝对定位 - 02</title>
+  <style>
+    .father {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      background-color: orange;
+    }
+
+    .son {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 200px;
+      left: 0;
+      background-color: rgb(154, 223, 154);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 如果祖先元素有定位（相对、绝对、固定定位） -->
+  <!-- 则以最近一级的有定位的祖先元素为参考点移动位置 -->
+
+  <!-- 绝对定位脱离标准流，不占用原先的位置 -->
+  <div class="father">
+    <div class="son"></div>
+  </div>
+</body>
+
+</html>
