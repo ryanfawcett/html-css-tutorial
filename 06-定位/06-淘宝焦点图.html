@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>淘宝焦点图</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .tb-promo {
+      position: relative;
+      width: 520px;
+      height: 280px;
+      background-color: skyblue;
+      margin: 100px auto;
+    }
+
+    .tb-promo img {
+      width: 520px;
+      height: 280px;
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      width: 20px;
+      height: 30px;
+      background: rgba(0, 0, 0, .3);
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      text-decoration: none;
+    }
+
+    .prev {
+      left: 0;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    .next {
+      right: 0;
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    .promo-nav {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      margin-left: -35px;
+      width: 70px;
+      height: 13px;
+      background: rgba(255, 255, 255, .3);
+      border-radius: 7px;
+    }
+
+    .promo-nav li {
+      float: left;
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      list-style: none;
+      border-radius: 50%;
+      margin: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tb-promo">
+    <img src="./images/tb.jpg" alt="">
+    <a href="#" class="prev">&lt;</a>
+    <a href="#" class="next">&gt;</a>
+    <ul class="promo-nav">
+      <li></li>
+      <li></li>
+      <li style="background-color: orange;"></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+
+</html>
