@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>固定定位</title>
+  <style>
+    /* 固定在版心右侧位置 */
+    /* 1.让固定定位的盒子 left: 50% 到浏览器可视区的一半位置 */
+    /* 2.让固定定位的盒子 margin-left: 版心宽度的一半 */
+    .w {
+      width: 800px;
+      height: 1400px;
+      background-color: orange;
+      margin: 0 auto;
+    }
+
+    .fixed {
+      position: fixed;
+      width: 50px;
+      height: 150px;
+      left: 50%;
+      margin-left: 405px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fixed"></div>
+  <div class="w"></div>
+</body>
+
+</html>
