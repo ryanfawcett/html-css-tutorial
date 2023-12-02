@@ -93,6 +93,10 @@ a {
   font-size: 14px;
   color: #666;
 }
+
+.user img {
+  vertical-align: middle;
+}
 /* banner */
 .banner {
   height: 421px;
