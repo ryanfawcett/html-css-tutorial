@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin负值的妙用</title>
+  <style>
+    ul li {
+      float: left;
+      width: 150px;
+      height: 200px;
+      border: 1px solid sandybrown;
+      list-style: none;
+      margin-left: -1px;
+    }
+
+    ul li:hover {
+      border-color: rgb(228, 22, 22);
+    }
+
+    /* 解决悬浮边框颜色问题 */
+    /* 1. 元素没有设置定位 */
+    ul li:hover {
+      position: relative;
+    }
+
+    /* 2. 元素设置了定位, 则通过设置z-index值 */
+    ul li:hover {
+      z-index: 100;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+</body>
+
+</html>
